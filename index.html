@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Exercice 1 - Canvas</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<canvas id="mon_canvas" width="400" height="400"> 
+  			Texte alternatif pour les navigateurs ne supportant pas Canvas.
+		</canvas>
+		<script type="text/javascript">
+  			var c = document.getElementById("mon_canvas");
+ 			var ctx = c.getContext("2d");
+
+ 			ctx.beginPath(); 
+			ctx.moveTo(75,130);  
+			ctx.lineTo(325,130);  
+			ctx.lineTo(200,5);
+			ctx.fillStyle = "#d7823e"; 
+			ctx.fill();
+
+
+			ctx.beginPath(); 
+			ctx.moveTo(75,130);
+			ctx.lineTo(75,375);  
+			ctx.lineTo(325,375);
+			ctx.lineTo(325,130);
+			ctx.fillStyle = "#a1d8e6"; 
+			ctx.fill();
+
+			ctx.beginPath();
+			ctx.moveTo(105,160);
+			ctx.lineTo(145,160);
+			ctx.lineTo(145,200);
+			ctx.lineTo(105,200);
+			ctx.fillStyle = "#c9c9c9"; 
+			ctx.fill();
+
+			ctx.beginPath();
+			ctx.moveTo(295,160);
+			ctx.lineTo(295,200);
+			ctx.lineTo(255,200);
+			ctx.lineTo(255,160);
+			ctx.fillStyle = "#c9c9c9"; 
+			ctx.fill();
+
+			ctx.beginPath();
+			ctx.moveTo(170,375);
+			ctx.lineTo(230,375);
+			ctx.lineTo(230,285);
+			ctx.lineTo(170,285);
+			ctx.fillStyle = "#c9c9c9"; 
+			ctx.fill();
+ 		</script>
+	</body>
+</html>
